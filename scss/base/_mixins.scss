@@ -1,0 +1,14 @@
+@mixin links($color, $hover) {
+  text-decoration: none;
+  color: $color;
+  margin: 30px;
+    &:hover {
+      color: $hover;
+      font-size: 1.7em;
+    }
+}
+
+%fixed-bar {
+  width: 100%;
+  position: fixed;
+}
