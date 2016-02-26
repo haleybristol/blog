@@ -1,0 +1,50 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../img/pool.jpg");
+  background-size: cover;
+  font-family: "Inconsolata"; }
+
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8); }
+
+header {
+  text-align: center;
+  color: #ff865d;
+  color: #ff865d; }
+  header a {
+    text-decoration: none;
+    color: #ff865d;
+    margin: 30px; }
+    header a:hover {
+      color: #5DD6FF;
+      font-size: 2em; }
+
+h3 {
+  margin-top: 0;
+  padding-top: 20px; }
+  h3 a {
+    text-decoration: none;
+    color: #ff865d;
+    margin: 50px 50px; }
+    h3 a:hover {
+      color: #5DD6FF;
+      font-size: 2em; }
+
+footer {
+  color: #ff865d;
+  position: absolute;
+  bottom: 0; }
+  footer a {
+    text-align: center;
+    text-decoration: none;
+    color: #ff865d; }
+    footer a:hover {
+      color: #5DD6FF;
+      font-size: 2em; }
+
+/*# sourceMappingURL=main.css.map */

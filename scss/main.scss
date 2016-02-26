@@ -1,0 +1,62 @@
+@import 'vendor/bourbon/bourbon';
+@import 'base/_variables';
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../img/pool.jpg");
+  background-size: cover;
+  font-family: 'Inconsolata', ;
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+header {
+  text-align: center;
+  color: $color-title;
+  color: $color-title;
+  a {
+    text-decoration: none;
+    color: $color-title;
+    margin: 30px;
+      &:hover {
+        color: $color-hover;
+        font-size: 2em;
+      }
+  }
+}
+  h3{
+    margin-top: 0;
+    padding-top: 20px;
+  a {
+    text-decoration: none;
+    color: $color-title;
+    margin: 50px 50px;
+      &:hover {
+        color: $color-hover;
+        font-size: 2em;
+      }
+  }
+}
+
+footer {
+  color: $color-title;
+  position: absolute;
+  bottom: 0;
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: $color-title;
+      &:hover {
+        color: $color-hover;
+        font-size: 2em;
+      }
+  }
+}
