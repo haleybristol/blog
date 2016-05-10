@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-header, footer {
+i, footer {
   width: 100%;
   position: fixed; }
 
@@ -12,19 +12,25 @@ html {
   margin: 0; }
 
 body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
   background-image: url("../img/pool.jpg");
-  background-size: cover;
+  margin: 0;
   font-family: "Inconsolata";
   width: 100%; }
 
 .container {
-  width: 90vw;
-  height: 100vh;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.8); }
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 a {
   text-decoration: none;
@@ -34,53 +40,18 @@ a {
     color: #5DD6FF;
     font-size: 1.7em; }
 
-header {
-  text-align: center;
-  color: #ff865d;
-  top: 10px; }
-  header h3 {
-    padding-top: 20px;
-    margin: 0 auto; }
-
-textarea {
-  height: 136px;
-  width: 400px;
-  margin: 80px 20px;
-  float: right; }
-
-section {
-  position: fixed;
+i {
   top: 10px;
-  right: 25px; }
-  section div {
-    display: inline-block;
-    margin-left: -48px; }
+  left: 10px; }
 
-.pix {
-  width: 90%;
-  margin: 0 auto;
-  height: 100%;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .pix:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 800px) {
-    .pix {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%; }
-      .pix:last-child {
-        margin-right: 0; } }
-
-.pix img {
-  width: 100%;
-  margin: 20px; }
+img {
+  justify-content: center;
+  margin: 30px 5px;
+  max-height: 490px;
+  max-width: 6800px; }
 
 footer {
-  right: -9px;
+  left: 75%;
   color: #ff865d;
   bottom: 3px; }
 

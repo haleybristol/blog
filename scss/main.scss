@@ -8,71 +8,43 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
   background-image: url("../img/pool.jpg");
-  background-size: cover;
+  margin: 0;
   font-family: 'Inconsolata', ;
       @include fill-parent;
 }
 
 .container {
-  width: 90vw;
-  height: 100vh;
-  margin: 0 auto;
   background: rgba(255, 255, 255, 0.8);
+  @include outer-container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 a {
   @include links($color-title, $color-hover);
 }
 
-header {
-  text-align: center;
-  color: $color-title;
+i {
   @extend %fixed-bar;
   top: 10px;
-  h3{
-    padding-top: 20px;
-    margin: 0 auto;
-  }
+  left: 10px;
 }
 
-textarea {
-  height: 136px;
-  width: 400px;
-  margin: 80px 20px;
-  float: right;
-}
 
-section {
-    position: fixed;
-    top: 10px;
-    right: 25px;
-    div {
-      display: inline-block;
-      margin-left: -48px;
-    }
-}
 
-.pix {
-  width: 90%;
-  margin: 0 auto;
-  height: 100%;
-  @include span-columns(12);
-  @include media(800px) {
-  @include span-columns(3);
-}
-}
-
-.pix img {
-  width: 100%;
-  margin: 20px;
+img {
+  justify-content: center;
+  margin: 30px 5px;
+  max-height: 490px;
+  max-width: 6800px;
 }
 
 footer {
-  right: -9px;
+  left: 75%;
   color: $color-title;
   @extend %fixed-bar;
   bottom: 3px;
